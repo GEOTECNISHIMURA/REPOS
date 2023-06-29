@@ -1,0 +1,132 @@
+#----------------------------------------------------------------------
+#   MDL Make File
+#
+#   conter.mke
+#----------------------------------------------------------------------
+debug = 0
+
+mdlDir    = d:/mdl/conter1.10/
+objectDir = d:/mdl/conter1.10/obj/
+
+%ifdef BSI
+%include $(MS)/include/publish/mdl.mki
+%else
+%include $(MS)/mdl/include/mdl.mki
+%endif
+
+#----------------------------------------------------------------------
+#   Define symbol for files included in our link and resource merge
+#----------------------------------------------------------------------
+Obj = $(objectDir)conter.mo \
+      $(mdlLibs)ditemlib.ml \
+
+newObj = $(objectDir)new.mo \
+         $(mdlLibs)ditemlib.ml \
+         $(mdlLibs)mdllib.ml \
+
+modObj = $(objectDir)modif.mo \
+         $(mdlLibs)ditemlib.ml \
+         $(mdlLibs)mdllib.ml \
+
+oneObj = $(objectDir)onetani.mo \
+         $(mdlLibs)ditemlib.ml \
+         $(mdlLibs)mdllib.ml \
+
+Rsc = $(objectDir)contertyp.rsc \
+      $(objectDir)conter.rsc \
+      $(objectDir)conter.mp \
+      $(objectDir)new.mp \
+      $(objectDir)modif.mp \
+      $(objectDir)onetani.mp \
+
+$(objectDir)contertyp.r	  	:$(mdlDir)contertyp.mt $(mdlDir)conter.h
+
+$(objectDir)contertyp.rsc   :$(objectDir)contertyp.r $(mdlDir)conter.h
+
+$(objectDir)conter.rsc  	:$(mdlDir)conter.r 
+
+$(objectDir)conter.mo   	:$(mdlDir)conter.mc
+
+$(objectDir)new.mo   		:$(mdlDir)new.mc
+
+$(objectDir)modif.mo   		:$(mdlDir)modif.mc
+
+$(objectDir)onetani.mo   	:$(mdlDir)onetani.mc
+
+
+#---------------------------------------------
+#	Compile and link MDL Application
+#---------------------------------------------
+$(objectDir)conter.mp:   $(Obj)
+	$(msg)
+	>$(objectDir)make.opt
+	-s20000
+	-tconter
+	$(linkOpts)
+	-a$@
+	$(Obj)
+	<
+	$(linkCmd) @$(objectDir)make.opt
+	~time
+
+
+#---------------------------------------------
+#	Compile and link MDL Application
+#---------------------------------------------
+$(objectDir)new.mp:   $(newObj)
+	$(msg)
+	>$(objectDir)make.opt
+	-s20000
+	-tnew
+	$(linkOpts)
+	-a$@
+	$(newObj)
+	<
+	$(linkCmd) @$(objectDir)make.opt
+	~time
+
+
+#---------------------------------------------
+#	Compile and link MDL Application
+#---------------------------------------------
+$(objectDir)modif.mp:   $(modObj)
+	$(msg)
+	>$(objectDir)make.opt
+	-s30000
+	-tmodif
+	$(linkOpts)
+	-a$@
+	$(modObj)
+	<
+	$(linkCmd) @$(objectDir)make.opt
+	~time
+
+
+#---------------------------------------------
+#	Compile and link MDL Application
+#---------------------------------------------
+$(objectDir)onetani.mp:   $(oneObj)
+	$(msg)
+	>$(objectDir)make.opt
+	-s30000
+	-tonetani
+	$(linkOpts)
+	-a$@
+	$(oneObj)
+	<
+	$(linkCmd) @$(objectDir)make.opt
+	~time
+
+
+#---------------------------------------------
+#	Merge Objects into one file
+#---------------------------------------------
+$(mdlapps)conter.ma:  $(Rsc)
+	$(msg)	
+	>$(objectDir)make.opt
+	-o$@
+	$(Rsc)
+	<
+	$(rscLibCmd) @$(objectDir)make.opt
+	~time
+

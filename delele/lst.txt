@@ -1,0 +1,106 @@
+Bentley Systems Make Utility. Version 10.00.00.26, Mar 15 2018
+Thu May 12 13:46:43 2022
+
+
+C:\Users\nishimura\AppData\Local\Temp\getucrtversion2017.bat
+
+Cannot find the .NET framework 64-bit version for this toolset - using default: v4.0.30319
+Cannot find the .NET framework 64-bit location for this toolset - using default: C:\Windows\Microsoft.NET\Framework64
+
+
+
+[== Building C:\Users\nishimura\source\repos\delete1.4\objects\delele_typ.r, (C:\Users\nishimura\source\repos\delete1.4\delele.h) ==]
+rsctype @C:\Users\nishimura\source\repos\delete1.4\objects\make.opt
+MicroStation Type Resource File Generator 10.16.02
+
+[== Building C:\Users\nishimura\source\repos\delete1.4\objects\delele_typ.rsc, (C:\Users\nishimura\source\repos\delete1.4\objects\delele_typ.r) ==]
+rcomp @C:\Users\nishimura\source\repos\delete1.4\objects\make.opt
+MicroStation Resource Compiler 10.16.02
+
+[== Building C:\Users\nishimura\source\repos\delete1.4\objects\delele.obj, (C:\Users\nishimura\source\repos\delete1.4\delele.cpp) ==]
+cl -IC:\PROGRA~1\Bentley\MicroStationCONNECTSDK\include\ -IC:\PROGRA~1\Bentley\MicroStationCONNECTSDKinclude\ -IC:\Users\nishimura\source\repos\delete1.4\objects\    -fp:precise -GS -EHc -GR -wd4345 -GF -favor:blend -D_X64_ -wd4701 -wd4244 -wd4564 -wd4840 -wd4702 -c -W4 -DBENTLEY_WARNINGS_HIGHEST_LEVEL -DWIN32 -DwinNT -MD -D__EXCEPTIONS -D_VISCXX -Gy -wd4996 -Od -D_CONVERSION_DONT_USE_THREAD_LOCALE -D_SECURE_SCL=0 -DWIN32_LEAN_AND_MEAN  -DNTDDI_WIN7SP1=0x06010100 -we4692  -nologo -MP -Zi -FdC:\Users\nishimura\source\repos\delete1.4\objects\objects.pdb    -EHs  /RTCsuc /D_ALLOW_RTCc_IN_STL  -fp:precise -FoC:\Users\nishimura\source\repos\delete1.4\objects\delele.obj C:\Users\nishimura\source\repos\delete1.4\delele.cpp 
+delele.cpp
+
+[== Building C:\Users\nishimura\source\repos\delete1.4\objects\del.obj, (C:\Users\nishimura\source\repos\delete1.4\delele.h) ==]
+cl -IC:\PROGRA~1\Bentley\MicroStationCONNECTSDK\include\ -IC:\PROGRA~1\Bentley\MicroStationCONNECTSDKinclude\ -IC:\Users\nishimura\source\repos\delete1.4\objects\    -fp:precise -GS -EHc -GR -wd4345 -GF -favor:blend -D_X64_ -wd4701 -wd4244 -wd4564 -wd4840 -wd4702 -c -W4 -DBENTLEY_WARNINGS_HIGHEST_LEVEL -DWIN32 -DwinNT -MD -D__EXCEPTIONS -D_VISCXX -Gy -wd4996 -Od -D_CONVERSION_DONT_USE_THREAD_LOCALE -D_SECURE_SCL=0 -DWIN32_LEAN_AND_MEAN  -DNTDDI_WIN7SP1=0x06010100 -we4692  -nologo -MP -Zi -FdC:\Users\nishimura\source\repos\delete1.4\objects\objects.pdb    -EHs  /RTCsuc /D_ALLOW_RTCc_IN_STL  -fp:precise -FoC:\Users\nishimura\source\repos\delete1.4\objects\del.obj C:\Users\nishimura\source\repos\delete1.4\del.cpp 
+del.cpp
+
+[== Building C:\Users\nishimura\source\repos\delete1.4\objects\file.obj, (C:\Users\nishimura\source\repos\delete1.4\delele.h) ==]
+cl -IC:\PROGRA~1\Bentley\MicroStationCONNECTSDK\include\ -IC:\PROGRA~1\Bentley\MicroStationCONNECTSDKinclude\ -IC:\Users\nishimura\source\repos\delete1.4\objects\    -fp:precise -GS -EHc -GR -wd4345 -GF -favor:blend -D_X64_ -wd4701 -wd4244 -wd4564 -wd4840 -wd4702 -c -W4 -DBENTLEY_WARNINGS_HIGHEST_LEVEL -DWIN32 -DwinNT -MD -D__EXCEPTIONS -D_VISCXX -Gy -wd4996 -Od -D_CONVERSION_DONT_USE_THREAD_LOCALE -D_SECURE_SCL=0 -DWIN32_LEAN_AND_MEAN  -DNTDDI_WIN7SP1=0x06010100 -we4692  -nologo -MP -Zi -FdC:\Users\nishimura\source\repos\delete1.4\objects\objects.pdb    -EHs  /RTCsuc /D_ALLOW_RTCc_IN_STL  -fp:precise -FoC:\Users\nishimura\source\repos\delete1.4\objects\file.obj C:\Users\nishimura\source\repos\delete1.4\file.cpp 
+file.cpp
+C:\Users\nishimura\source\repos\delete1.4\file.cpp(90): warning C4267: '=': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\Users\nishimura\source\repos\delete1.4\file.cpp(91): warning C4267: '=': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\Users\nishimura\source\repos\delete1.4\file.cpp(106): warning C4267: '=': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\Users\nishimura\source\repos\delete1.4\file.cpp(107): warning C4267: '=': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+
+[== Building "C:\PROGRA~1\Bentley\MicroStation CONNECT Edition\MicroStation\mdlapps\delele.dll", (C:\Users\nishimura\source\repos\delete1.4\objects\delele.obj) ==]
+link -out:"C:\PROGRA~1\Bentley\MicroStation CONNECT Edition\MicroStation\mdlapps\delele.dll"     -Ignore:4087 -Ignore:4089 -Ignore:4199 -Ignore:4281 -MANIFESTUAC:NO  -debug -incremental:yes -fixed:no @C:\Users\nishimura\source\repos\delete1.4\objects\delelelink.rsp
+Microsoft (R) Incremental Linker Version 14.16.27048.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-dynamicbase 
+-dll 
+"-out:C:\PROGRA~1\Bentley\MicroStation CONNECT Edition\MicroStation\mdlapps\delele.dll" 
+"-implib:C:\Users\nishimura\source\repos\delete1.4\objects\delele.lib" 
+"-pdb:C:\PROGRA~1\Bentley\MicroStation CONNECT Edition\MicroStation\mdlapps\delele.pdb" 
+-fixed:no 
+C:\Users\nishimura\source\repos\delete1.4\objects\delele.obj C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\bentley.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\mdlbltin.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\BentleyGeom.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\DgnPlatform.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\dgnview.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\BentleyAllocator.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\mstntoolsubs.lib gdi32.lib user32.lib kernel32.lib "C:\PROGRA~2\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\\lib\x64\msvcrt.lib" 
+C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\mdlbltin.lib 
+LINK : warning LNK4224: /INCREMENTAL:YES はサポートされていません。無視されます。
+LINK : 前回のインクリメンタル リンクで C:\PROGRA~1\Bentley\MicroStation CONNECT Edition\MicroStation\mdlapps\delele.dll が見つからなかったか、ビルドされませんでした。フル リンクを行います。
+   ライブラリ C:\Users\nishimura\source\repos\delete1.4\objects\delele.lib とオブジェクト C:\Users\nishimura\source\repos\delete1.4\objects\delele.exp を作成中
+BMAKE: Warning - DLS_NAME is defined even though DLM_NO_DLS is set.  Please remove DLS_NAME from your makefile.
+BMAKE: Warning - DLM_DLO_DEST is defined even though DLM_NO_DLS is set.  Please remove DLM_DLO_DEST from your makefile.
+BMAKE: Warning - DLM_EXP_DEST is defined even though DLM_NO_DEF is set.  Please remove DLM_EXP_DEST from your makefile.
+BMAKE: Warning - You can set DLMLINK_WARNINGS_AS_ERRORS=1 to stop in the build when these errors were found.
+
+[== Building "C:\PROGRA~1\Bentley\MicroStation CONNECT Edition\MicroStation\mdlapps\file.dll", (C:\Users\nishimura\source\repos\delete1.4\objects\file.obj) ==]
+link -out:"C:\PROGRA~1\Bentley\MicroStation CONNECT Edition\MicroStation\mdlapps\file.dll"     -Ignore:4087 -Ignore:4089 -Ignore:4199 -Ignore:4281 -MANIFESTUAC:NO  -debug -incremental:yes -fixed:no @C:\Users\nishimura\source\repos\delete1.4\objects\filelink.rsp
+Microsoft (R) Incremental Linker Version 14.16.27048.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-dynamicbase 
+-dll 
+"-out:C:\PROGRA~1\Bentley\MicroStation CONNECT Edition\MicroStation\mdlapps\file.dll" 
+"-implib:C:\Users\nishimura\source\repos\delete1.4\objects\file.lib" 
+"-pdb:C:\PROGRA~1\Bentley\MicroStation CONNECT Edition\MicroStation\mdlapps\file.pdb" 
+-fixed:no 
+C:\Users\nishimura\source\repos\delete1.4\objects\file.obj C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\bentley.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\mdlbltin.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\BentleyGeom.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\DgnPlatform.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\dgnview.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\BentleyAllocator.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\mstntoolsubs.lib gdi32.lib user32.lib kernel32.lib "C:\PROGRA~2\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\\lib\x64\msvcrt.lib" gdi32.lib user32.lib kernel32.lib "C:\PROGRA~2\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\\lib\x64\msvcrt.lib" 
+C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\mdlbltin.lib 
+LINK : warning LNK4224: /INCREMENTAL:YES はサポートされていません。無視されます。
+LINK : 前回のインクリメンタル リンクで C:\PROGRA~1\Bentley\MicroStation CONNECT Edition\MicroStation\mdlapps\file.dll が見つからなかったか、ビルドされませんでした。フル リンクを行います。
+   ライブラリ C:\Users\nishimura\source\repos\delete1.4\objects\file.lib とオブジェクト C:\Users\nishimura\source\repos\delete1.4\objects\file.exp を作成中
+BMAKE: Warning - DLS_NAME is defined even though DLM_NO_DLS is set.  Please remove DLS_NAME from your makefile.
+BMAKE: Warning - DLM_DLO_DEST is defined even though DLM_NO_DLS is set.  Please remove DLM_DLO_DEST from your makefile.
+BMAKE: Warning - DLM_EXP_DEST is defined even though DLM_NO_DEF is set.  Please remove DLM_EXP_DEST from your makefile.
+BMAKE: Warning - You can set DLMLINK_WARNINGS_AS_ERRORS=1 to stop in the build when these errors were found.
+
+[== Building "C:\PROGRA~1\Bentley\MicroStation CONNECT Edition\MicroStation\mdlapps\del.dll", (C:\Users\nishimura\source\repos\delete1.4\objects\del.obj) ==]
+link -out:"C:\PROGRA~1\Bentley\MicroStation CONNECT Edition\MicroStation\mdlapps\del.dll"     -Ignore:4087 -Ignore:4089 -Ignore:4199 -Ignore:4281 -MANIFESTUAC:NO  -debug -incremental:yes -fixed:no @C:\Users\nishimura\source\repos\delete1.4\objects\dellink.rsp
+Microsoft (R) Incremental Linker Version 14.16.27048.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-dynamicbase 
+-dll 
+"-out:C:\PROGRA~1\Bentley\MicroStation CONNECT Edition\MicroStation\mdlapps\del.dll" 
+"-implib:C:\Users\nishimura\source\repos\delete1.4\objects\del.lib" 
+"-pdb:C:\PROGRA~1\Bentley\MicroStation CONNECT Edition\MicroStation\mdlapps\del.pdb" 
+-fixed:no 
+C:\Users\nishimura\source\repos\delete1.4\objects\del.obj C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\bentley.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\mdlbltin.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\BentleyGeom.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\DgnPlatform.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\dgnview.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\BentleyAllocator.lib C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\mstntoolsubs.lib gdi32.lib user32.lib kernel32.lib "C:\PROGRA~2\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\\lib\x64\msvcrt.lib" gdi32.lib user32.lib kernel32.lib "C:\PROGRA~2\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\\lib\x64\msvcrt.lib" gdi32.lib user32.lib kernel32.lib "C:\PROGRA~2\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\\lib\x64\msvcrt.lib" 
+C:\PROGRA~1\Bentley\MicroStationCONNECTSDK\library\mdlbltin.lib 
+LINK : warning LNK4224: /INCREMENTAL:YES はサポートされていません。無視されます。
+LINK : 前回のインクリメンタル リンクで C:\PROGRA~1\Bentley\MicroStation CONNECT Edition\MicroStation\mdlapps\del.dll が見つからなかったか、ビルドされませんでした。フル リンクを行います。
+   ライブラリ C:\Users\nishimura\source\repos\delete1.4\objects\del.lib とオブジェクト C:\Users\nishimura\source\repos\delete1.4\objects\del.exp を作成中
+
+[== Building C:\Users\nishimura\source\repos\delete1.4\objects\delele.mi, (C:\Users\nishimura\source\repos\delete1.4\objects\delele_typ.rsc) ==]
+rlib @C:\Users\nishimura\source\repos\delete1.4\objects\temp.cmd
+MicroStation Resource Librarian 10.16.02
+
+[== Building C:\Users\nishimura\source\repos\delete1.4\objects\delele.rsc, (C:\Users\nishimura\source\repos\delete1.4\delele.h) ==]
+rcomp @C:\Users\nishimura\source\repos\delete1.4\objects\make.opt
+MicroStation Resource Compiler 10.16.02
+
+[== Building "C:\PROGRA~1\Bentley\MicroStation CONNECT Edition\MicroStation\mdlapps\delele.ma", (C:\Users\nishimura\source\repos\delete1.4\objects\delele.mi) ==]
+rlib @C:\Users\nishimura\source\repos\delete1.4\objects\make.opt
+MicroStation Resource Librarian 10.16.02
+Thu May 12 13:46:52 2022, elapsed time: 0:09

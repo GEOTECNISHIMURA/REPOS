@@ -1,0 +1,15 @@
+MicroStation Development Language Compiler 05.07.00
+MicroStation Development Language Linker  05.07.00
+MicroStation Resource Librarian 05.07.00
+Bentley Systems Make Utility. Version 5.103, 1997
+Fri Jul 19 10:43:40 2019
+
+[** MDL Examples: C:\WORK\toSE\delele1.4\obj\delele.mo <-- C:\WORK\toSE\delele1.4\delele.mc **]
+C:\WIN32APP\ustation\mdl\bin\mcomp @C:\WIN32APP\ustation\mdlexmpl\objects\temp.cmd
+
+[** MDL Examples: C:\WORK\toSE\delele1.4\obj\delele.mp <-- C:\WORK\toSE\delele1.4\obj\delele.mo **]
+C:\WIN32APP\ustation\mdl\bin\mlink @C:\WORK\toSE\delele1.4\obj\make.opt
+
+[** MDL Examples: C:\WIN32APP\ustation\mdlapps\delele.ma <-- C:\WORK\toSE\delele1.4\obj\delele.mp **] 
+C:\WIN32APP\ustation\mdl\bin\rlib @C:\WORK\toSE\delele1.4\obj\make.opt
+Fri Jul 19 10:43:41 2019, elapsed time: 0:01
